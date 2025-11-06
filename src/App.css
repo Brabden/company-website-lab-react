@@ -43,16 +43,19 @@ body {
 .navbar ul li:hover {
   scale: 1.2;
   background-color: #33333385;
+  z-index: 1;
 }
 
 h1 {
-  color: red;
+  color: #bbb;
 }
 
 .section-container {
-  margin-top: 20px;
   font-size: 20px;
   font-family: "DM Serif Text", serif;
+  z-index: 0;
+  flex-grow: 1;
+  min-height: 100vh;
 }
 
 .office-image {
@@ -99,11 +102,48 @@ h1 {
   margin-bottom: 12px;
 }
 
+.external-links {
+  margin-left: 15px;
+}
+
 .home-page {
+position: relative;
 background: url('./company-picture.png');
-width: 100%;
-height: 500px;
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 20px;
 background-size: cover;
-background-repeat: no-repeat;
 box-sizing: border-box;
+color: black;
+overflow: hidden;
+}
+
+.content-div {
+  background-color: #333333c3;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.spacer {
+  margin: 15px 20px;
+}
+
+.spacer * {
+  margin: 15px 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  height: 50px;
 }

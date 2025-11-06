@@ -7,13 +7,15 @@ const CompanyHistory = () => {
     };
 
   return (
-    <div>
-        <img class ="company-picture" src="../company-picture.png"></img>
+    <div className="spacer">
+        <img className ="company-picture" src="../company-picture.png"></img>
+        <div className="company-history-content">
           <h4>
             Founded: {history.founded}
           </h4>
           <h4>Headquarters: {history.headquarters}</h4>
           <p>{history.description} </p>
+        </div>
         </div>
   );
 };

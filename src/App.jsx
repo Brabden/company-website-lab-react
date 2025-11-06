@@ -27,7 +27,11 @@ const App = () => {
       <div className="section-container">
         {sections[activeSection]}
       </div>
+      <footer>
+        <p>&copy; 2015-2025 Interesting Company, All Rights Reserved</p>
+      </footer>
     </div>
+
   );
 };
 

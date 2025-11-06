@@ -1,6 +1,6 @@
 const ExternalLinks = () => {
     return (
-        <div>
+        <div className="spacer">
             <h1>
                 External Links
             </h1>

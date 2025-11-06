@@ -2,7 +2,7 @@ const PastWork = () => {
     const pastWorkText = "We've worked with so many big and totally legit companies!";
 
     return (
-        <div>
+        <div className="spacer">
             <h1>Past Work</h1>
             <p>{pastWorkText}</p>
              <img className = "pastwork-image" src="../pastwork.png"></img>

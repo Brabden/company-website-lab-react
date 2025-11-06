@@ -6,7 +6,7 @@ const Staff = () => {
   ];
 
   return (
-    <div>
+    <div className="spacer">
       <h1>Meet Our Staff!</h1>
       <ul className="staff-list">
         {staffList.map((member, index) => (
